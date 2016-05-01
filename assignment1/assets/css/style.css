@@ -22,10 +22,10 @@ colors used extra:
 /** @school-turquoise: #4AAAA5; why doesn't this work? **/
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 form {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -40,11 +40,11 @@ input {
 	color: #D5D6CE;
 }
 input[type=submit] {
-    padding:5px 15px; 
-    background: #4AAAA5; 
-    border:0 none;
-    cursor:pointer;
-    font-size: 15px;  
+	padding:5px 15px; 
+	background: #4AAAA5; 
+	border:0 none;
+	cursor:pointer;
+	font-size: 15px;  
 }
 h1 {
 	font-size: 30px;
@@ -186,10 +186,10 @@ li {
 	height: 94px;
 	line-height: 94px;
 	text-align: center;
-  	background-color: #666666;
-  	position: relative;
-  	border-top: solid; 
-  	border-width: 6px;
+	background-color: #666666;
+	position: relative;
+	border-top: solid; 
+	border-width: 6px;
 	border-color: #4AAAA5;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 15px;
@@ -235,33 +235,38 @@ li {
 	background-color: #4AAAA5;
 }
 #nohoverlist {
-  pointer-events: none;
+	pointer-events: none;
 }
 .clearme {
-  clear: both;
+	clear: both;
 }
 
 #box-all {	
 	background-image: url('../images/swirl.png');	
-}
+} 
 
 /** media queries off to a bad start **/
 
-@media screen and (max-width: 640px) {
-/** 640 for cell phone **/
-#box-all {	
-	background-image: url('../images/symphony.png');	
-}
-}
+
 @media screen and (max-width: 768px) {
-/** 768 for tablet **/
-#box-all {	
-	background-image: url('../images/paisley.png');	
+	/** 768 for tablet **/
+	#box-all {	
+		background-image: url('../images/paisley.png');	
+	}
 }
+
+@media screen and (max-width: 640px) {
+	/** 640 for cell phone **/
+	#box-all {	
+		background-image: url('../images/symphony.png');	
+	}
+}
+/** 
 }
 @media screen and (max-width: 980px) {
-/** 980 for desktop **/
+/** 980 for desktop 
 #box-all {	
 	background-image: url('../images/xv.png');	
+	}
 }
-}
+**/
